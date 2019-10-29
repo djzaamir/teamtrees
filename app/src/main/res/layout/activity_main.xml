@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background_gradient"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        app:srcCompat="@drawable/ic_logo_teamtrees_full" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's plant 20 million tree's by 2020"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/donation_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/teamtree_website"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        />
+
+
+        <TextView
+        android:id="@+id/tree_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:text="0"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        />
+
+        <TextView
+        android:text="tree's planted so far"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
