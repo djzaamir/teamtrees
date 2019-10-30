@@ -35,9 +35,14 @@ public class TeamTreeCountExtractor implements Runnable {
                 StringBuilder http_response = new StringBuilder();
 
                 try {
+
                     URL url =  new URL(teamTrees_site);
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                     conn.setRequestMethod("GET");
+
+                    final int connection_timeout = 5000;
+                    conn.setConnectTimeout(connection_timeout); //Probably how to long to wait to connect with the server
+                    conn.setReadTimeout(connection_timeout); //And how long to wait for the expected data from the server
                     conn.connect();
 
                     //Read response byte by byte IF HTTP_OK
